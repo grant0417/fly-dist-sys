@@ -1,0 +1,24 @@
+[package]
+name = "fly-dist-sys"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "echo"
+path = "src/bin/echo.rs"
+
+[[bin]]
+name = "unique-ids"
+path = "src/bin/unique-ids.rs"
+
+[[bin]]
+name = "broadcast"
+path = "src/bin/broadcast.rs"
+
+[dependencies]
+futures = "0.3.30"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.114"
+tokio = { version = "1.36.0", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
